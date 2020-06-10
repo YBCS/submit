@@ -10,3 +10,6 @@ const Person = ({ person, handleDelete }) => (
 
 
 export default Person;
+
+
+

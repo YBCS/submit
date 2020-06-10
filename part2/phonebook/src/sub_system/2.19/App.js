@@ -1,8 +1,7 @@
-// 2.20
-// add async fix -- two browser open and not reloaded 
-// show error when user try to delete data already removed from browser
-// cannot get that color change logic
-// can't figure this out 
+// 2.19
+// add css and notification -- 
+// [X] after add 
+// [x] update person
 
 import React, { useState, useEffect } from "react"
 
@@ -10,7 +9,6 @@ import PersonForm from "./components/PersonForm"
 import Person from "./components/Person"
 import Filter from "./components/Filter"
 import Notification from "./components/Notification"
-
 
 import personService from "./services/persons"
 import './index.css'
@@ -53,8 +51,7 @@ const App = () => {
           `${newName} is already added to phonebook, replace the old number with new one?`
         )
       ) {
-        personService.update(id, newPerson)
-        .then((returnedPerson) => {
+        personService.update(id, newPerson).then((returnedPerson) => {
           console.log(returnedPerson)
           setErrorMessage(`Number changed to ${returnedPerson.number}`)
           setTimeout(() => {
@@ -63,13 +60,6 @@ const App = () => {
           update_persons()
           setNewName("")
           setNewNumber("")
-        })
-        .catch(error => {
-          setErrorMessage(`Information of ${newPerson.name} has already been removed from server`)
-          update_persons()
-          setTimeout(() => {
-            setErrorMessage(null)
-          }, 3000)
         })
       }
     } else {
@@ -100,18 +90,11 @@ const App = () => {
   }
   const handleDeleteOf = (person) => {
     if (window.confirm(`Delete ${person.name} ?`)) {
-      personService.remove(person)
-      .then((response) => {
+      personService.remove(person).then((response) => {
         // console.log(response)
+        // fix id
         update_persons()
         // console.log(persons)
-      })
-      .catch(error => {
-        setErrorMessage(`Information of ${person.name} has already been removed from server`)
-        setTimeout(() => {
-          setErrorMessage(null)
-        }, 3000)
-        update_persons()
       })
     }
   }
