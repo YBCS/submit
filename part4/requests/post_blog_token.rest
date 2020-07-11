@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI1ZjA3MzkxNjZkM2VmYTRmMmMyOWRkYjgiLCJpYXQiOjE1OTQ0NjM0MDF9.X0tJ5AAx9R7W0dsFu1UmbTHe5En9ADgywRtwqg9Obls
+
+{
+  "title": "the latest post by mluukkai",
+  "author": "buda - mluukkai",
+  "url": "www.ybcs.corp.in",
+  "likes": 15
+}
