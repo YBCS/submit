@@ -1,0 +1,69 @@
+{
+  "anecdotes": [
+    {
+      "content": "If it hurts, do it more often",
+      "id": "47145",
+      "votes": 1
+    },
+    {
+      "content": "Adding manpower to a late software project makes it later!",
+      "id": "21149",
+      "votes": 10
+    },
+    {
+      "content": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
+      "id": "69581",
+      "votes": 3
+    },
+    {
+      "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+      "id": "36975",
+      "votes": 1
+    },
+    {
+      "content": "Premature optimization is the root of all evil.",
+      "id": "25170",
+      "votes": 4
+    },
+    {
+      "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
+      "id": "98312",
+      "votes": 0
+    },
+    {
+      "content": "this is the final test after 6.14, hope everything is fine. even the comments",
+      "votes": 2,
+      "id": "_vcvPYy"
+    },
+    {
+      "content": "hello good moring",
+      "votes": 2,
+      "id": "w8GMIr9"
+    },
+    {
+      "content": "this is fine ?",
+      "votes": 9,
+      "id": "osU49wg"
+    },
+    {
+      "content": "the jfalskdjlaksdfj ",
+      "votes": 17,
+      "id": "nGz5r90"
+    },
+    {
+      "content": "hey this is it ?",
+      "votes": 2,
+      "id": "gk7SojZ"
+    },
+    {
+      "content": "final test before moving to part d",
+      "votes": 44,
+      "id": "BJiRukD"
+    },
+    {
+      "content": "hey connect not work?",
+      "votes": 9,
+      "id": "sPydKp7"
+    }
+  ]
+}
